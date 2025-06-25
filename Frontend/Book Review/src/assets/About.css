@@ -1,0 +1,213 @@
+.about-container {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+              url('https://images.pexels.com/photos/159866/books-book-pages-read-literature-159866.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 100px 20px 40px 20px;
+}
+
+.about-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about-content h1 {
+  color: #9c6644;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.about-content h2 {
+  color: #9c6644;
+  margin: 2rem 0 1rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.about-content p {
+  color: #666;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.about-section {
+  margin-bottom: 3rem;
+}
+
+.about-section h2 {
+  color: #9c6644;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  border-bottom: 2px solid #9c6644;
+  padding-bottom: 0.5rem;
+}
+
+.about-section p {
+  color: #666;
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.feature-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+.feature-card h3 {
+  color: #9c6644;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.feature-card p {
+  color: #666;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.how-it-works {
+  padding-left: 1.5rem;
+  color: #555;
+}
+
+.how-it-works li {
+  margin-bottom: 0.8rem;
+  line-height: 1.5;
+}
+
+.about-section a {
+  color: #3498db;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.about-section a:hover {
+  color: #2980b9;
+  text-decoration: underline;
+}
+
+.authors-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.author-card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.author-card:hover {
+  transform: translateY(-5px);
+}
+
+.author-image {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+.author-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.author-card:hover .author-image img {
+  transform: scale(1.05);
+}
+
+.author-card h3 {
+  color: #333;
+  margin: 1rem 0 0.5rem;
+  padding: 0 1.5rem;
+  font-size: 1.5rem;
+}
+
+.author-role {
+  color: #9c6644;
+  font-weight: 500;
+  margin: 0.5rem 0;
+  padding: 0 1.5rem;
+}
+
+.author-bio {
+  color: #666;
+  padding: 0 1.5rem 1.5rem;
+  line-height: 1.6;
+}
+
+.contact-info {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.contact-info p {
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.contact-info a {
+  color: #9c6644;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .about-content {
+    padding: 1.5rem;
+  }
+
+  .about-content h1 {
+    font-size: 2rem;
+  }
+
+  .about-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .authors-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .author-image {
+    height: 250px;
+  }
+} 

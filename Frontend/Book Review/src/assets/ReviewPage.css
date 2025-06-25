@@ -1,0 +1,167 @@
+.review-page {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 100vh;
+  background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)),
+              url('https://images.pexels.com/photos/159711/books-bookstore-book-reading-159711.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.review-page::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.85);
+  z-index: 1;
+}
+
+.review-page > * {
+  position: relative;
+  z-index: 2;
+}
+
+.review-page h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #333;
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  padding-top: 1rem;
+}
+
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.review-card {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.review-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.review-header h2 {
+  font-size: 1.25rem;
+  color: #333;
+  margin: 0;
+  flex: 1;
+}
+
+.review-rating {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.star-icon {
+  font-size: 1.25rem;
+  color: #ddd;
+}
+
+.star-icon.filled {
+  color: #ffd700;
+}
+
+.star-icon.half {
+  color: #ffd700;
+}
+
+.rating-number {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.review-meta {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.author {
+  font-weight: 500;
+}
+
+.genre {
+  background: #f0f0f0;
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+}
+
+.review-text {
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.review-footer {
+  font-size: 0.85rem;
+  color: #888;
+}
+
+.loading {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.2rem;
+  color: #666;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  margin: 2rem auto;
+  max-width: 300px;
+}
+
+.error {
+  text-align: center;
+  padding: 2rem;
+  color: #dc3545;
+  font-size: 1.2rem;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  margin: 2rem auto;
+  max-width: 300px;
+}
+
+@media (max-width: 768px) {
+  .review-page {
+    padding: 1rem;
+  }
+
+  .reviews-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .review-header {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .review-rating {
+    align-self: flex-start;
+  }
+} 

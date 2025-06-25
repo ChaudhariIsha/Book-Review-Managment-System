@@ -1,0 +1,44 @@
+/* Center the login form in the middle of the screen */
+.login-page-background{
+  background-image: url(Images/Book9.jpg);
+  background-size: cover;
+}
+.login-container {
+  margin-top: 50px; /* Add space above */
+  margin-bottom: 50px; /* Add space below */
+  
+  
+}
+
+/* Style the card */
+.login-card {
+  padding: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  
+}
+
+/* Style the form elements */
+.login-form .form-control {
+  border-radius: 5px;
+  padding: 10px;
+}
+
+/* Style the login button */
+.login-form .btn-login {
+  background-color: #007bff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+/* Add custom styles to the text and links */
+.login-text {
+  text-align: center;
+  margin-top: 10px;
+}
+.register-page-background{
+  background-image: url(Images/Book9.jpg);
+  background-size: cover;
+}
